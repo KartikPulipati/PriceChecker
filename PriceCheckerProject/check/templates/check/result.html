@@ -1,0 +1,39 @@
+{% extends "check/base.html" %}
+{% load static %}
+{% block content %}
+<br><br>
+
+<div class="container">
+    <a href="{{ wal_link }}" target="_blank">
+<div class="alert alert-light" role="alert">
+    <h3><span style="font-family: 'Russo One', sans-serif; color:black">Walmart</span></h3><br>
+    <span style="font-family: 'Roboto Mono', monospace; color:black">{{ wal_title }}</span><br>
+    Price: ${{ wal_price }}<br><br>
+    <img src={{ wal_image }}>
+    <hr>
+    {% if wal_in_stock %}
+    <span style="color:green; font-weight:bold">In Stock! :)</span>
+    {% else %}
+    <span style="color:red; font-weight:bold">Not In Stock! :(</span>
+    {% endif %}
+</div>
+    </a>
+
+<a href="{{ amazon_link }}" target="_blank">
+<div class="alert alert-light" role="alert">
+    <h3><span style="font-family: 'Russo One', sans-serif; color:black">Amazon</span></h3><br>
+    <span style="font-family: 'Roboto Mono', monospace; color:black">{{ amazon_title }}</span><br>
+    Price: {{ amazon_price }}<br><br>
+    <hr>
+</div>
+    </a>
+<a href="{{ url }}" target="_blank">
+<div class="alert alert-light" role="alert">
+    <h3><span style="font-family: 'Russo One', sans-serif; color:black">Target</span></h3><br>
+    <span style="font-family: 'Roboto Mono', monospace; color:black">{{ target_title }}</span><br>
+    Price: {{ target_price }}<br><br>
+    <hr>
+</div>
+    </a>
+</div>
+{% endblock %}

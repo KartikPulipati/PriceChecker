@@ -1,0 +1,27 @@
+#input-box{
+font-size: 16px !important;
+font-weight: 300 !important;
+color: #333 !important;
+line-height: 1.625 !important;
+
+background-color: #fff !important;
+
+border-color: #eee;
+border: none;
+border-bottom: 1px solid #9e9e9e;
+
+box-shadow: none;
+box-sizing: content-box;
+
+border-radius: 0;
+background-image: url( //addsearch.com/logo/AAAAAA-20.png ) !important;
+background-repeat: no-repeat;
+background-position: 95% 50%;
+
+width: 50% !important;
+padding: 15px !important;
+cursor: auto !important;
+height: 20% !important;
+
+
+}

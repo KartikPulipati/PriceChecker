@@ -1,0 +1,59 @@
+
+{% extends "check/base.html" %}
+{% load static %}
+{% block content %}
+<br>
+<div class="container-fluid" >
+
+    <div style="text-align: center; font-family: 'Russo One', sans-serif;"><h1><span style="background-color:#FFF44F">Price</span> Checker</h1></div>
+    <br>
+    <div style="text-align: center; font-family: 'Russo One', sans-serif;"><h1>Check Your Prices Across Popular Stores</h1></div>
+    <br>
+<hr>
+
+    </div>
+<br><br><br><br><br><br>
+
+<div class="container">
+    <form action="{% url 'results' %}">
+<div align="middle">
+  <div class="form-group">
+
+    <input type="text" class="form-control" id="input-box" name="searchBox" placeholder="Search...">
+    <small id="emailHelp" class="form-text text-muted">Enter the name of the product. We will try to find the best match!</small>
+  </div>
+
+  <input type="submit" value="Check" class="btn btn-outline-dark">
+    </div>
+</form>
+</div>
+<br><br><br><br><br><br>
+
+<hr>
+<div class="container-fluid">
+    <div class="row">
+
+         <div class="col-lg-4 col-md-6"><img src="{% static 'check/target2.png' %}" class="img-fluid "></div>
+         <div class="col-lg-4 col-md-6"><img src="{% static 'check/amazon.png' %}" class="img-fluid"></div>
+         <div class="col-lg-4 col-md-6"><img src="{% static 'check/walmart.png' %}" class="img-fluid"></div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
