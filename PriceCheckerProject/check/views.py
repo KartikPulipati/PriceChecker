@@ -12,7 +12,7 @@ def results(request):
 
     # Walmart
     params = {
-    'api_key': '273CE7DCC4D24B6DAD61183544F449C3',
+    'api_key': '${{ secrets.WAL_KEY }}',
     'type': 'search',
     'search_term': keyword,
     'sort_by': 'best_match'
@@ -27,7 +27,7 @@ def results(request):
 
 
     params_amazon = {
-        'api_key': '25D582A47BE04CB9BA5FBD93890254B7',
+        'api_key': '${{ secrets.AM_KEY }}',
         'type': 'search',
         'amazon_domain': 'amazon.com',
         'search_term': keyword,
@@ -47,7 +47,7 @@ def results(request):
     querystring = {"store_id": "3991", "keyword": keyword, "sponsored": "1", "limit": "1", "offset": "0"}
 
     headers = {
-        'x-rapidapi-key': "e39bdaad74mshf9264caaaca51e9p103e55jsna3454bec5cb6",
+        'x-rapidapi-key': "${{ secrets.TAR_KEY }}",
         'x-rapidapi-host': "target-com-store-product-reviews-locations-data.p.rapidapi.com"
     }
 
